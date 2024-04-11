@@ -1,0 +1,20 @@
+[versions]
+agp = "8.3.2"
+kotlin = "1.9.23"
+composeCompiler = "1.5.11"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.8.2" }
+
+compose-bom = { module = "androidx.compose:compose-bom", version = "2024.04.00" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+
+[plugins]
+android-app = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
