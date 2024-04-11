@@ -1,5 +1,5 @@
 [versions]
-agp = "8.3.2"
+agp = "8.2.2"
 kotlin = "1.9.23"
 composeCompiler = "1.5.11"
 
@@ -13,8 +13,17 @@ compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
 compose-material3 = { module = "androidx.compose.material3:material3" }
 
+# Dependencies of the included build-logic
+android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+android-desugaring = { module = "com.android.tools:desugar_jdk_libs", version = "2.0.4" }
+
 [plugins]
 android-app = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+
+# Convention plugins
+convention-android-app = { id = "AndroidAppConventionPlugin", version = "unspecified" }
+convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
