@@ -2,6 +2,7 @@ package io.github.pawgli.kmpapptemplate.config
 
 import io.github.pawgli.kmpapptemplate.extension.SupportedTargets
 import io.github.pawgli.kmpapptemplate.extension.SupportedTargetsImpl
+import io.github.pawgli.kmpapptemplate.util.getLibrary
 import io.github.pawgli.kmpapptemplate.util.libs
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.add
@@ -15,17 +16,17 @@ internal fun Project.configureKotlinMultiplatform(
 
     with(sourceSets) {
       commonMain.dependencies {
-        implementation(libs.findLibrary("kotlinx-coroutines-core").get())
-        implementation(libs.findLibrary("kotlinx-datetime").get())
+        implementation(libs.getLibrary("kotlinx-coroutines-core"))
+        implementation(libs.getLibrary("kotlinx-datetime"))
       }
       commonTest.dependencies {
-        implementation(libs.findLibrary("kotlin-test").get())
-        implementation(libs.findLibrary("kotest-assertions").get())
-        implementation(libs.findLibrary("turbine").get())
-        implementation(libs.findLibrary("kotlinx-coroutines-test").get())
+        implementation(libs.getLibrary("kotlin-test"))
+        implementation(libs.getLibrary("kotest-assertions"))
+        implementation(libs.getLibrary("turbine"))
+        implementation(libs.getLibrary("kotlinx-coroutines-test"))
       }
       androidMain.dependencies {
-        implementation(libs.findLibrary("kotlinx-coroutines-android").get())
+        implementation(libs.getLibrary("kotlinx-coroutines-android"))
       }
     }
   }
