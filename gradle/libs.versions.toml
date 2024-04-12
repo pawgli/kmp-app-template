@@ -36,4 +36,6 @@ kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref 
 # Convention plugins
 convention-android-app = { id = "AndroidAppConventionPlugin", version = "unspecified" }
 convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
+convention-android-library = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
+convention-android-library-compose = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
 convention-multiplatform = { id = "MultiplatformConventionPlugin", version = "unspecified" }

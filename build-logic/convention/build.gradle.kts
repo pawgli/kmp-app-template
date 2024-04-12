@@ -15,6 +15,8 @@ gradlePlugin {
   plugins {
     registerConvention("AndroidAppConventionPlugin")
     registerConvention("AndroidAppComposeConventionPlugin")
+    registerConvention("AndroidLibraryConventionPlugin")
+    registerConvention("AndroidLibraryComposeConventionPlugin")
     registerConvention("MultiplatformConventionPlugin")
   }
 }
