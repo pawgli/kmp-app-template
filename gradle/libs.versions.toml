@@ -18,6 +18,11 @@ compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
 compose-material3 = { module = "androidx.compose.material3:material3" }
 
+koin-bom = { module = "io.insert-koin:koin-bom", version = "3.5.3" }
+koin-core = { module = "io.insert-koin:koin-core" }
+koin-android = { module = "io.insert-koin:koin-android" }
+koin-test = { module = "io.insert-koin:koin-test" }
+
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotest-assertions = { module = "io.kotest:kotest-assertions-core", version = "5.8.1" }
 turbine = { module = "app.cash.turbine:turbine", version = "1.1.0" }
