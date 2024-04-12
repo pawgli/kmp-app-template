@@ -1,7 +1,8 @@
 package io.github.pawgli.kmpapptemplate.config
 
 import com.android.build.api.dsl.CommonExtension
-import io.github.pawgli.kmpapptemplate.util.getAsString
+import io.github.pawgli.kmpapptemplate.util.getLibrary
+import io.github.pawgli.kmpapptemplate.util.getVersion
 import io.github.pawgli.kmpapptemplate.util.libs
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
@@ -15,16 +16,16 @@ internal fun Project.configureCompose(
     }
 
     composeOptions {
-      kotlinCompilerExtensionVersion = libs.findVersion("composeCompiler").getAsString()
+      kotlinCompilerExtensionVersion = libs.getVersion("composeCompiler")
     }
   }
 
   dependencies {
-    val bom = libs.findLibrary("compose-bom").get()
+    val bom = libs.getLibrary("compose-bom")
     add("implementation", platform(bom))
-    add("implementation", libs.findLibrary("compose-ui").get())
-    add("implementation", libs.findLibrary("compose-material3").get())
-    add("implementation", libs.findLibrary("compose-uiPreview").get())
-    add("debugImplementation", libs.findLibrary("compose-uiTooling").get())
+    add("implementation", libs.getLibrary("compose-ui"))
+    add("implementation", libs.getLibrary("compose-material3"))
+    add("implementation", libs.getLibrary("compose-uiPreview"))
+    add("debugImplementation", libs.getLibrary("compose-uiTooling"))
   }
 }
