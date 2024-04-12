@@ -3,6 +3,7 @@ agp = "8.2.2"
 kotlin = "1.9.23"
 composeCompiler = "1.5.11"
 kotlinx-coroutines = "1.8.0"
+ktor = "2.3.7"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.8.2" }
@@ -11,6 +12,7 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.5.0" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.6.2" }
 
 compose-bom = { module = "androidx.compose:compose-bom", version = "2024.04.00" }
 compose-ui = { module = "androidx.compose.ui:ui" }
@@ -22,6 +24,16 @@ koin-bom = { module = "io.insert-koin:koin-bom", version = "3.5.3" }
 koin-core = { module = "io.insert-koin:koin-core" }
 koin-android = { module = "io.insert-koin:koin-android" }
 koin-test = { module = "io.insert-koin:koin-test" }
+
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktor-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-contentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-clientMock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+
+kermit = { module = "co.touchlab:kermit", version = "2.0.2" }
 
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotest-assertions = { module = "io.kotest:kotest-assertions-core", version = "5.8.1" }
@@ -37,6 +49,7 @@ android-app = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 
 # Convention plugins
 convention-android-app = { id = "AndroidAppConventionPlugin", version = "unspecified" }
@@ -44,3 +57,5 @@ convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin", ver
 convention-android-library = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
 convention-android-library-compose = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
 convention-multiplatform = { id = "MultiplatformConventionPlugin", version = "unspecified" }
+convention-multiplatform-koin = { id = "MultiplatformKoinConventionPlugin", version = "unspecified" }
+convention-multiplatform-ktor = { id = "MultiplatformKtorConventionPlugin", version = "unspecified" }

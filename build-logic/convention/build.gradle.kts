@@ -18,6 +18,8 @@ gradlePlugin {
     registerConvention("AndroidLibraryConventionPlugin")
     registerConvention("AndroidLibraryComposeConventionPlugin")
     registerConvention("MultiplatformConventionPlugin")
+    registerConvention("MultiplatformKoinConventionPlugin")
+    registerConvention("MultiplatformKtorConventionPlugin")
   }
 }
 
