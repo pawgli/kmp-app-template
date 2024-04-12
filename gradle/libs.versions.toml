@@ -50,6 +50,7 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+sqldelight = { id = "app.cash.sqldelight", version = "2.0.1" }
 
 # Convention plugins
 convention-android-app = { id = "AndroidAppConventionPlugin", version = "unspecified" }
@@ -59,3 +60,4 @@ convention-android-library-compose = { id = "AndroidAppComposeConventionPlugin",
 convention-multiplatform = { id = "MultiplatformConventionPlugin", version = "unspecified" }
 convention-multiplatform-koin = { id = "MultiplatformKoinConventionPlugin", version = "unspecified" }
 convention-multiplatform-ktor = { id = "MultiplatformKtorConventionPlugin", version = "unspecified" }
+convention-multiplatform-sqlDelight = { id = "MultiplatformKtorConventionPlugin", version = "unspecified" }

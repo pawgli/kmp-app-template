@@ -9,7 +9,7 @@ class MultiplatformKtorConventionPlugin : Plugin<Project> {
     pluginManager.apply("org.jetbrains.kotlin.plugin.serialization")
 
     configure<KotlinMultiplatformExtension> {
-      configureKtor(this)
+      configureKtor(multiplatformExtension = this)
     }
   }
 }
