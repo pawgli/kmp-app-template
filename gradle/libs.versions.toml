@@ -2,16 +2,25 @@
 agp = "8.2.2"
 kotlin = "1.9.23"
 composeCompiler = "1.5.11"
+kotlinx-coroutines = "1.8.0"
 
 [libraries]
-kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.8.2" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.5.0" }
 
 compose-bom = { module = "androidx.compose:compose-bom", version = "2024.04.00" }
 compose-ui = { module = "androidx.compose.ui:ui" }
 compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
 compose-material3 = { module = "androidx.compose.material3:material3" }
+
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotest-assertions = { module = "io.kotest:kotest-assertions-core", version = "5.8.1" }
+turbine = { module = "app.cash.turbine:turbine", version = "1.1.0" }
 
 # Dependencies of the included build-logic
 android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
@@ -27,3 +36,4 @@ kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref 
 # Convention plugins
 convention-android-app = { id = "AndroidAppConventionPlugin", version = "unspecified" }
 convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
+convention-multiplatform = { id = "MultiplatformConventionPlugin", version = "unspecified" }
