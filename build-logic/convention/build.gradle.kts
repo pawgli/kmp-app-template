@@ -21,6 +21,7 @@ gradlePlugin {
     registerConvention("MultiplatformKoinConventionPlugin")
     registerConvention("MultiplatformKtorConventionPlugin")
     registerConvention("MultiplatformSqlDelightConventionPlugin")
+    registerConvention("BasePackagePlugin")
   }
 }
 

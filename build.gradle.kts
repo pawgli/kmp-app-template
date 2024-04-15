@@ -20,6 +20,7 @@ plugins {
     alias(convention.multiplatform.ktor) apply false
     alias(convention.multiplatform.sqlDelight) apply false
   }
+  id("BasePackagePlugin")
 }
 
 dependencies {
