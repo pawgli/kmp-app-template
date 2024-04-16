@@ -13,15 +13,15 @@ dependencies {
 
 gradlePlugin {
   plugins {
-    registerConvention("AndroidAppConventionPlugin")
-    registerConvention("AndroidAppComposeConventionPlugin")
-    registerConvention("AndroidLibraryConventionPlugin")
-    registerConvention("AndroidLibraryComposeConventionPlugin")
-    registerConvention("MultiplatformConventionPlugin")
-    registerConvention("MultiplatformKoinConventionPlugin")
-    registerConvention("MultiplatformKtorConventionPlugin")
-    registerConvention("MultiplatformSqlDelightConventionPlugin")
-    registerConvention("BasePackagePlugin")
+    registerConvention("AndroidAppConventionPlugin", id = "android.app")
+    registerConvention("AndroidAppComposeConventionPlugin", id = "android.app.compose")
+    registerConvention("AndroidLibraryConventionPlugin", id = "android.library")
+    registerConvention("AndroidLibraryComposeConventionPlugin", id = "android.library.compose")
+    registerConvention("MultiplatformConventionPlugin", id = "multiplatform")
+    registerConvention("MultiplatformKoinConventionPlugin", id = "multiplatform.koin")
+    registerConvention("MultiplatformKtorConventionPlugin", id = "multiplatform.ktor")
+    registerConvention("MultiplatformSqlDelightConventionPlugin", id = "multiplatform.sqlDelight")
+    registerConvention("BasePackagePlugin", id = "basePackage")
   }
 }
 
@@ -29,5 +29,15 @@ fun NamedDomainObjectContainer<PluginDeclaration>.registerConvention(name: Strin
   register(name) {
     id = name
     implementationClass = name
+  }
+}
+
+private fun NamedDomainObjectContainer<PluginDeclaration>.registerConvention(
+  implementationClass: String,
+  id: String,
+) {
+  register(implementationClass) {
+    this.id = "io.github.pawgli.kmpapptemplate.$id"
+    this.implementationClass = "io.github.pawgli.kmpapptemplate.$implementationClass"
   }
 }

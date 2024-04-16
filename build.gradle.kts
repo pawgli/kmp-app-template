@@ -19,8 +19,13 @@ plugins {
     alias(convention.multiplatform.koin) apply false
     alias(convention.multiplatform.ktor) apply false
     alias(convention.multiplatform.sqlDelight) apply false
+    alias(convention.basePackage)
   }
-  id("BasePackagePlugin")
+}
+
+basePackagePlugin {
+  basePackage = "io.github.pawgli.kmpapptemplate"
+  fileTypesToUpdate = listOf("kt", "kts")
 }
 
 dependencies {

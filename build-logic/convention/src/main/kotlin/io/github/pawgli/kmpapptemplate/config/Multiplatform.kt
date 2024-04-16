@@ -1,7 +1,7 @@
 package io.github.pawgli.kmpapptemplate.config
 
-import io.github.pawgli.kmpapptemplate.extension.SupportedTargets
-import io.github.pawgli.kmpapptemplate.extension.SupportedTargetsImpl
+import io.github.pawgli.kmpapptemplate.extension.multiplatform.SupportedTargets
+import io.github.pawgli.kmpapptemplate.extension.multiplatform.SupportedTargetsImpl
 import io.github.pawgli.kmpapptemplate.util.getLibrary
 import io.github.pawgli.kmpapptemplate.util.libs
 import org.gradle.api.Project

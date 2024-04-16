@@ -1,3 +1,5 @@
+package io.github.pawgli.kmpapptemplate
+
 import com.android.build.api.dsl.LibraryExtension
 import io.github.pawgli.kmpapptemplate.config.configureKotlin
 import io.github.pawgli.kmpapptemplate.config.configureKotlinMultiplatform

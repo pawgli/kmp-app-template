@@ -1,15 +1,18 @@
-import io.github.pawgli.kmpapptemplate.config.configureKtor
+package io.github.pawgli.kmpapptemplate
+
+import io.github.pawgli.kmpapptemplate.config.configureKoin
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 
-class MultiplatformKtorConventionPlugin : Plugin<Project> {
+class MultiplatformKoinConventionPlugin : Plugin<Project> {
+
   override fun apply(target: Project) = with(target) {
-    pluginManager.apply("org.jetbrains.kotlin.plugin.serialization")
+    pluginManager.apply("org.jetbrains.kotlin.multiplatform")
 
     configure<KotlinMultiplatformExtension> {
-      configureKtor(multiplatformExtension = this)
+      configureKoin(multiplatformExtension = this)
     }
   }
 }
