@@ -1,4 +1,4 @@
-package io.github.pawgli.kmpapptemplate.extension
+package io.github.pawgli.kmpapptemplate.extension.multiplatform
 
 import org.jetbrains.kotlin.gradle.plugin.mpp.AbstractKotlinTarget
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinAndroidTarget

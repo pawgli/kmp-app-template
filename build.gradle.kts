@@ -23,6 +23,11 @@ plugins {
   id("BasePackagePlugin")
 }
 
+basePackagePlugin {
+  basePackage = "io.github.pawgli.kmpapptemplate"
+  fileTypesToUpdate = listOf("kt", "kts")
+}
+
 dependencies {
   detektPlugins(libs.detekt.formatting)
 }
