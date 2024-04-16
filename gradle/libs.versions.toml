@@ -57,11 +57,12 @@ sqlDelight = { id = "app.cash.sqldelight", version = "2.0.2" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 
 # Convention plugins
-convention-android-app = { id = "AndroidAppConventionPlugin", version = "unspecified" }
-convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
-convention-android-library = { id = "AndroidLibraryConventionPlugin", version = "unspecified" }
-convention-android-library-compose = { id = "AndroidLibraryComposeConventionPlugin", version = "unspecified" }
-convention-multiplatform = { id = "MultiplatformConventionPlugin", version = "unspecified" }
-convention-multiplatform-koin = { id = "MultiplatformKoinConventionPlugin", version = "unspecified" }
-convention-multiplatform-ktor = { id = "MultiplatformKtorConventionPlugin", version = "unspecified" }
-convention-multiplatform-sqlDelight = { id = "MultiplatformSqlDelightConventionPlugin", version = "unspecified" }
+convention-android-app = { id = "io.github.pawgli.kmpapptemplate.android.app", version = "unspecified" }
+convention-android-app-compose = { id = "io.github.pawgli.kmpapptemplate.android.app.compose", version = "unspecified" }
+convention-android-library = { id = "io.github.pawgli.kmpapptemplate.android.library", version = "unspecified" }
+convention-android-library-compose = { id = "io.github.pawgli.kmpapptemplate.android.library.compose", version = "unspecified" }
+convention-multiplatform = { id = "io.github.pawgli.kmpapptemplate.multiplatform", version = "unspecified" }
+convention-multiplatform-koin = { id = "io.github.pawgli.kmpapptemplate.multiplatform.koin", version = "unspecified" }
+convention-multiplatform-ktor = { id = "io.github.pawgli.kmpapptemplate.multiplatform.ktor", version = "unspecified" }
+convention-multiplatform-sqlDelight = { id = "io.github.pawgli.kmpapptemplate.multiplatform.sqlDelight", version = "unspecified" }
+convention-basePackage = { id = "io.github.pawgli.kmpapptemplate.basePackage", version = "unspecified" }

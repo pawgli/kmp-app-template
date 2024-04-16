@@ -1,15 +1,17 @@
-import io.github.pawgli.kmpapptemplate.config.configureSqlDelight
+package io.github.pawgli.kmpapptemplate
+
+import io.github.pawgli.kmpapptemplate.config.configureKtor
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 
-class MultiplatformSqlDelightConventionPlugin : Plugin<Project> {
+class MultiplatformKtorConventionPlugin : Plugin<Project> {
   override fun apply(target: Project) = with(target) {
-    pluginManager.apply("app.cash.sqldelight")
+    pluginManager.apply("org.jetbrains.kotlin.plugin.serialization")
 
     configure<KotlinMultiplatformExtension> {
-      configureSqlDelight(multiplatformExtension = this)
+      configureKtor(multiplatformExtension = this)
     }
   }
 }

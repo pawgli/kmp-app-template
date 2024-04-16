@@ -1,3 +1,5 @@
+package io.github.pawgli.kmpapptemplate
+
 import io.github.pawgli.kmpapptemplate.extension.basepackage.BasePackagePluginExtension
 import io.github.pawgli.kmpapptemplate.packagerefactor.ChangeBasePackage
 import org.gradle.api.Plugin

@@ -1,19 +1,22 @@
-import com.android.build.api.dsl.LibraryExtension
+package io.github.pawgli.kmpapptemplate
+
+import com.android.build.api.dsl.ApplicationExtension
 import io.github.pawgli.kmpapptemplate.config.configureKotlin
 import io.github.pawgli.kmpapptemplate.config.configureSdkVersions
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
-class AndroidLibraryConventionPlugin : Plugin<Project> {
+class AndroidAppConventionPlugin : Plugin<Project> {
 
   override fun apply(target: Project) = with(target) {
     with(pluginManager) {
-      apply("com.android.library")
+      apply("com.android.application")
       apply("org.jetbrains.kotlin.android")
     }
     configureKotlin()
-    configure<LibraryExtension> {
+    configure<ApplicationExtension> {
+      defaultConfig.targetSdk = ConventionDefaults.TargetSdk
       configureSdkVersions(commonExtension = this)
     }
   }

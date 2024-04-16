@@ -1,5 +1,6 @@
 package io.github.pawgli.kmpapptemplate.extension.basepackage
 
+import io.github.pawgli.kmpapptemplate.BasePackagePlugin
 import org.gradle.api.provider.ListProperty
 import org.gradle.api.provider.Property
 
