@@ -16,7 +16,7 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.5.0" }
 kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.6.3" }
 
-compose-bom = { module = "androidx.compose:compose-bom", version = "2024.04.00" }
+compose-bom = { module = "androidx.compose:compose-bom", version = "2024.05.00" }
 compose-ui = { module = "androidx.compose.ui:ui" }
 compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
