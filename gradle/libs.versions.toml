@@ -1,7 +1,7 @@
 [versions]
 java = "17"
 agp = "8.2.2"
-kotlin = "1.9.23"
+kotlin = "1.9.24"
 composeCompiler = "1.5.11"
 kotlinx-coroutines = "1.8.0"
 ktor = "2.3.10"
