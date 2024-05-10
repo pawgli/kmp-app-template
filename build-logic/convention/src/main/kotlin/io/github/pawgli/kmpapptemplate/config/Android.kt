@@ -7,7 +7,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
 internal fun Project.configureSdkVersions(
-  commonExtension: CommonExtension<*, *, *, *, *>,
+  commonExtension: CommonExtension<*, *, *, *, *, *>,
   minSdk: Int = 29,
 ) {
   with(commonExtension) {
@@ -21,7 +21,7 @@ internal fun Project.configureSdkVersions(
   }
 }
 
-private fun Project.setUpDesugaring(extension: CommonExtension<*, *, *, *, *>) {
+private fun Project.setUpDesugaring(extension: CommonExtension<*, *, *, *, *, *>) {
   extension.compileOptions {
     isCoreLibraryDesugaringEnabled = true
   }

@@ -1,14 +1,14 @@
 [versions]
 java = "17"
-agp = "8.2.2"
+agp = "8.4.0"
 kotlin = "1.9.23"
 composeCompiler = "1.5.11"
 kotlinx-coroutines = "1.8.0"
-ktor = "2.3.10"
+ktor = "2.3.11"
 detekt = "1.23.6"
 
 [libraries]
-androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.8.2" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.9.0" }
 
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
@@ -16,7 +16,7 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.5.0" }
 kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.6.3" }
 
-compose-bom = { module = "androidx.compose:compose-bom", version = "2024.04.00" }
+compose-bom = { module = "androidx.compose:compose-bom", version = "2024.05.00" }
 compose-ui = { module = "androidx.compose.ui:ui" }
 compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
@@ -39,7 +39,7 @@ kermit = { module = "co.touchlab:kermit", version = "2.0.3" }
 detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
 
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
-kotest-assertions = { module = "io.kotest:kotest-assertions-core", version = "5.8.1" }
+kotest-assertions = { module = "io.kotest:kotest-assertions-core", version = "5.9.0" }
 turbine = { module = "app.cash.turbine:turbine", version = "1.1.0" }
 
 # Dependencies of the included build-logic
