@@ -8,7 +8,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
 internal fun Project.configureCompose(
-  extension: CommonExtension<*, *, *, *, *>,
+  extension: CommonExtension<*, *, *, *, *, *>,
 ) {
   extension.apply {
     buildFeatures {
