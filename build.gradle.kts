@@ -8,6 +8,8 @@ plugins {
     alias(kotlin.multiplatform) apply false
     alias(kotlin.serialization) apply false
     alias(sqlDelight) apply false
+    alias(compose) apply false
+    alias(compose.compiler) apply false
     alias(detekt)
 
     // Convention plugins

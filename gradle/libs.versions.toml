@@ -1,7 +1,7 @@
 [versions]
-java = "17"
-agp = "8.4.0"
-kotlin = "1.9.23"
+java = "21"
+agp = "8.5.0"
+kotlin = "2.0.0"
 composeCompiler = "1.5.11"
 kotlinx-coroutines = "1.8.1"
 ktor = "2.3.11"
@@ -14,7 +14,7 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.6.0" }
-kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.6.3" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.7.0" }
 
 compose-bom = { module = "androidx.compose:compose-bom", version = "2024.06.00" }
 compose-ui = { module = "androidx.compose.ui:ui" }
@@ -53,6 +53,8 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version = "1.6.11" }
 sqlDelight = { id = "app.cash.sqldelight", version = "2.0.2" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 
