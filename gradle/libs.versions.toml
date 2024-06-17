@@ -1,7 +1,7 @@
 [versions]
 java = "21"
 agp = "8.5.0"
-kotlin = "1.9.23"
+kotlin = "2.0.0"
 composeCompiler = "1.5.11"
 kotlinx-coroutines = "1.8.1"
 ktor = "2.3.11"
@@ -53,6 +53,8 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version = "1.6.11" }
 sqlDelight = { id = "app.cash.sqldelight", version = "2.0.2" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 
