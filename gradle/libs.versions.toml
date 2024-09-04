@@ -45,7 +45,7 @@ turbine = { module = "app.cash.turbine:turbine", version = "1.1.0" }
 # Dependencies of the included build-logic
 android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-android-desugaring = { module = "com.android.tools:desugar_jdk_libs", version = "2.0.4" }
+android-desugaring = { module = "com.android.tools:desugar_jdk_libs", version = "2.1.2" }
 
 [plugins]
 android-app = { id = "com.android.application", version.ref = "agp" }
