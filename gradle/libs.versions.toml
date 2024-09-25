@@ -3,7 +3,7 @@ java = "21"
 agp = "8.5.0"
 kotlin = "2.0.0"
 composeCompiler = "1.5.11"
-kotlinx-coroutines = "1.8.1"
+kotlinx-coroutines = "1.9.0"
 ktor = "2.3.12"
 detekt = "1.23.6"
 
